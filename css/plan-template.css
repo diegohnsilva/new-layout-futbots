@@ -257,7 +257,6 @@
     }
 }
 
-
 @media (max-width: 899px) { 
     .div-container-texto-feature {
         font-size: 12px;
@@ -265,6 +264,15 @@
 
     .panel {
         padding: 0px;
+    }
+
+    .background {
+        padding: 0px 10px 10px;
+    }
+
+    .row>* {
+        padding-left: 0px;
+        padding-right: 0px;   
     }
 }
 

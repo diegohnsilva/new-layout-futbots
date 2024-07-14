@@ -140,4 +140,11 @@ jQuery(function ($) {
         $('#section-assinatura').css('display', 'block');
         $('#section-home').hide();
     });
+
+    $('.btn-menu').click(function(){
+        $('.page-wrapper').toggleClass('toggled');
+        $('.div-container-btn-hide-menu').css("visibility", "visible");
+        $('#overlay').css("visibility", "hidden");
+    });
+
 });

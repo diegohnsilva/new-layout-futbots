@@ -5,3 +5,12 @@
 #section-assinatura {
     display: none;
 }
+
+#section-footer {
+    display: flex;
+    justify-content: end;
+}
+
+#section-address-info {
+    display: none;
+}
