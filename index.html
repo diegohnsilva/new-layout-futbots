@@ -1,0 +1,354 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Painel do Usuário</title>
+
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css" integrity="sha384-oS3vJWv+0UjzBfQzYUhtDYW+Pj2yciDJxpsK1OYPAYjqT085Qq/1cq5FLXAZQ7Ay" crossorigin="anonymous">
+    <link rel="stylesheet" href="//malihu.github.io/custom-scrollbar/jquery.mCustomScrollbar.min.css">
+    
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/sidebar-themes.css">
+    <link rel="shortcut icon" type="image/png" href="" />
+    <link rel="stylesheet" href="./css/plan-template.css">
+    <link rel="stylesheet" href="./css/sections-template.css">
+</head>
+
+<body>
+    <div class="page-wrapper default-theme sidebar-bg bg1 toggled">
+        <div id="container-hide-menu" class="div-container-btn-hide-menu">
+            <div>
+                <a href="#" class="logo-menu-fixed">FUTBOTS</a>
+            </div>
+            <div class="btn-hide-menu" id="toggle-sidebar">
+                <i class="fa-sharp fa fa-bars fa-2xl" style="color:#000; font-size: 25px; cursor: pointer;"></i>
+            </div>
+        </div>
+
+        <nav id="sidebar" class="sidebar-wrapper">
+
+            <div class="sidebar-content">
+                <!-- sidebar-brand  -->
+                <div id="container-header-menu" class="div-container-header-menu">
+                    <div class="div-btn-toggle-menu" id="pin-sidebar">
+                        <i class="fa-sharp fa fa-bars fa-2xl" style="color:#fff; font-size: 25px; cursor: pointer;"></i>
+                    </div>
+                    <a href="#" class="a-logo-menu" id="logo-header-menu">FUTBOTS</a>
+                </div>
+
+                <!-- sidebar-header  -->
+                <div class="sidebar-item sidebar-header d-flex flex-nowrap">
+                    <div class="user-pic">
+                        <img class="img-responsive img-rounded" src="img/user.jpg" alt="User picture">
+                    </div>
+                    <div class="user-info">
+                        <span class="user-name">Diego
+                            <strong>Silva</strong>
+                        </span>
+                        <span class="user-role">Tipster</span>
+                        <span class="user-status">
+                            <i class="fa fa-circle"></i>
+                            <span>Ativo</span>
+                        </span>
+                    </div>
+                </div>
+
+                <!-- sidebar-menu  -->
+                <div class=" sidebar-item sidebar-menu">
+                    <ul>
+                        <li class="header-menu">
+                            <span>Principal</span>
+                        </li>
+                        <li>
+                            <a href="#" id="btn-home">
+                                <i class="fa fa-home"></i>
+                                <span class="menu-text">Home</span>
+                            </a>
+                        </li>
+                        <li class="sidebar-dropdown">
+                            <a href="#">
+                                <i class="fa fa-robot"></i>
+                                <span class="menu-text">Bots</span>
+                            </a>
+                            <div class="sidebar-submenu">
+                                <ul>
+                                    <li>
+                                        <a href="#">Criar Bot</a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <i class="fa fa-chart-line"></i>
+                                <span class="menu-text">Validador de Apostas</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#" id="btn-assinatura">
+                                <i class="fa fa-shopping-cart"></i>
+                                <span class="menu-text">Assinatura</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <i class="fa fa-video"></i>
+                                <span class="menu-text">Tutoriais</span>
+                            </a>
+                        </li>
+                        <li class="header-menu">
+                            <span>Extra</span>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <i class="fa fa-lightbulb"></i>
+                                <span class="menu-text">Sugestões</span>
+                            </a>
+                        </li>
+                        <li id="btn-hide-menu">
+                            <a href="#" id="hide-menu-sidebar">
+                                <i class="fa fa-eye-slash"></i>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+                <!-- sidebar-menu  -->
+            </div>
+
+            <!-- sidebar-footer  -->
+            <div class="sidebar-footer">
+                <div class="dropdown">
+                    <a href="#" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        <i class="fa fa-bell"></i>
+                        <span class="badge badge-pill badge-warning notification">1</span>
+                    </a>
+                    <div class="dropdown-menu notifications" aria-labelledby="dropdownMenuMessage">
+                        <div class="notifications-header">
+                            <i class="fa fa-bell"></i>
+                            Notificações
+                        </div>
+                        <div class="dropdown-divider"></div>
+                        <a class="dropdown-item" href="#">
+                            <div class="notification-content">
+                                <div class="icon">
+                                    <i class="fas fa-check text-success border border-success"></i>
+                                </div>
+                                <div class="content">
+                                    <div class="notification-detail">Lorem ipsum dolor sit amet consectetur adipisicing
+                                        elit. In totam explicabo</div>
+                                    <div class="notification-time">
+                                        6 minutes ago
+                                    </div>
+                                </div>
+                            </div>
+                        </a>
+                        <div class="dropdown-divider"></div>
+                        <a class="dropdown-item text-center" href="#">Ver todas as notificações</a>
+                    </div>
+                </div>
+                <div>
+                    <a href="#">
+                        <i class="fa fa-power-off"></i>
+                    </a>
+                </div>
+                <div class="pinned-footer">
+                    <a href="#">
+                        <i class="fas fa-ellipsis-h"></i>
+                    </a>
+                </div>
+            </div>
+
+        </nav>
+
+        <!-- page-content  -->
+        <main class="page-content pt-2">
+            <div id="overlay" class="overlay"></div>
+            <div class="container-fluid p-5">
+                <div class="row">
+                    <div class="div-container-sections col-md-12">
+                        <section id="section-home" class="section-container">
+                            <div class="form-group col-md-12">
+                                <h2>Home</h2>
+                                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Qui doloribus odio aperiam nemo id dolore vitae distinctio repellendus aliquid ducimus, ex, at accusamus veniam? Expedita soluta beatae saepe dolorum corrupti!</p>
+                            </div>
+                        </section>
+
+                        <section id="section-assinatura" class="section-container">
+                            <div class="form-group col-md-12">
+                                <h2>Assinatura</h2>
+                                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Qui doloribus odio aperiam nemo id dolore vitae distinctio repellendus aliquid ducimus, ex, at accusamus veniam? Expedita soluta beatae saepe dolorum corrupti!</p>
+                            </div>
+                            <div class="background">
+                                <div class="container">
+                                    <div class="panel pricing-table">
+
+                                        <div class="pricing-plan">
+                                            <div class="div-container-icon-plan">
+                                                <!-- <img src="./img/robot-essencial-v2.png" alt="" class="pricing-img"> -->
+                                            </div>
+                                            <h2 class="pricing-header">Atual</h2>
+
+                                            <div class="div-container-features">
+                                                <div class="div-itens-features">
+                                                    <div class="div-container-texto-feature">1 bots</div>
+                                                    <div class="div-container-icon-feature"><i class="fa fa-check"></i></div>
+                                                </div>
+                                                <div class="div-itens-features">
+                                                    <div class="div-container-texto-feature">Suporte técnico</div>
+                                                    <div class="div-container-icon-feature"><i class="fa fa-check"></i></div>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                        <div class="pricing-plan">
+                                            <div class="div-container-icon-plan">
+                                                <!-- <img src="./img/robot-essencial-v2.png" alt="" class="pricing-img"> -->
+                                            </div>
+                                            <h2 class="pricing-header">Essencial</h2>
+
+                                            <div class="div-container-features">
+                                                <div class="div-itens-features">
+                                                    <div class="div-container-texto-feature">5 bots</div>
+                                                    <div class="div-container-icon-feature"><i class="fa fa-check"></i></div>
+                                                </div>
+                                                <div class="div-itens-features">
+                                                    <div class="div-container-texto-feature">Enviar para grupo</div>
+                                                    <div class="div-container-icon-feature"><i class="fa fa-ban"></i></div>
+                                                </div>
+                                                <div class="div-itens-features">
+                                                    <div class="div-container-texto-feature">Validador de apostas</div>
+                                                    <div class="div-container-icon-feature"><i class="fa fa-ban"></i></div>
+                                                </div>
+                                                <div class="div-itens-features">
+                                                    <div class="div-container-texto-feature">Acesso ilimitado</div>
+                                                    <div class="div-container-icon-feature"><i class="fa fa-ban"></i></div>
+                                                </div>
+                                                <div class="div-itens-features">
+                                                    <div class="div-container-texto-feature">Prioridade na fila</div>
+                                                    <div class="div-container-icon-feature"><i class="fa fa-check"></i></div>
+                                                </div>
+                                                <div class="div-itens-features">
+                                                    <div class="div-container-texto-feature">Atendimento prioritário</div>
+                                                    <div class="div-container-icon-feature"><i class="fa fa-check"></i></div>
+                                                </div>
+                                                <div class="div-itens-features">
+                                                    <div class="div-container-texto-feature">Suporte técnico</div>
+                                                    <div class="div-container-icon-feature"><i class="fa fa-check"></i></div>
+                                                </div>
+                                            </div>
+                                            <div class="div-container-pricing">
+                                                <span class="span-text-moeda">R$</span><span class="pricing-price">29,90</span><span class="span-recurrence">/mês</span>
+                                            </div>
+                                            <a href="#/" class="pricing-button">Assinar</a>
+                                        </div>
+                                
+                                        <div class="pricing-plan">
+                                            <div class="div-container-icon-plan">
+                                                <!-- <img src="./img/robot-elite.png" alt="" class="pricing-img"> -->
+                                            </div>
+                                            <h2 class="pricing-header">Elite</h2>
+                            
+                                            <div class="div-container-features">
+                                                <div class="div-itens-features">
+                                                    <div class="div-container-texto-feature">5 bots</div>
+                                                    <div class="div-container-icon-feature"><i class="fa fa-check"></i></div>
+                                                </div>
+                                                <div class="div-itens-features">
+                                                    <div class="div-container-texto-feature">Enviar para grupo</div>
+                                                    <div class="div-container-icon-feature"><i class="fa fa-ban"></i></div>
+                                                </div>
+                                                <div class="div-itens-features">
+                                                    <div class="div-container-texto-feature">Validador de apostas</div>
+                                                    <div class="div-container-icon-feature"><i class="fa fa-check"></i></div>
+                                                </div>
+                                                <div class="div-itens-features">
+                                                    <div class="div-container-texto-feature">Acesso ilimitado</div>
+                                                    <div class="div-container-icon-feature"><i class="fa fa-check"></i></div>
+                                                </div>
+                                                <div class="div-itens-features">
+                                                    <div class="div-container-texto-feature">Prioridade na fila</div>
+                                                    <div class="div-container-icon-feature"><i class="fa fa-check"></i></div>
+                                                </div>
+                                                <div class="div-itens-features">
+                                                    <div class="div-container-texto-feature">Atendimento prioritário</div>
+                                                    <div class="div-container-icon-feature"><i class="fa fa-check"></i></div>
+                                                </div>
+                                                <div class="div-itens-features">
+                                                    <div class="div-container-texto-feature">Suporte técnico</div>
+                                                    <div class="div-container-icon-feature"><i class="fa fa-check"></i></div>
+                                                </div>
+                                            </div>
+                                            <div class="div-container-pricing">
+                                                <span class="span-text-moeda">R$</span><span class="pricing-price">49,90</span><span class="span-recurrence">/mês</span>
+                                            </div>
+                                            <a href="#/" class="pricing-button is-featured">Assinar</a>
+                                        </div>
+                                
+                                        <div class="pricing-plan">
+                                            <div class="div-container-icon-plan">
+                                                <!-- <img src="./img/robot-tipster.png" alt="" class="pricing-img"> -->
+                                            </div>
+                                            <h2 class="pricing-header">Tipster</h2>
+
+                                            <div class="div-container-features">
+                                                <div class="div-itens-features">
+                                                    <div class="div-container-texto-feature">5 bots</div>
+                                                    <div class="div-container-icon-feature"><i class="fa fa-check"></i></div>
+                                                </div>
+                                                <div class="div-itens-features">
+                                                    <div class="div-container-texto-feature">Enviar para grupo</div>
+                                                    <div class="div-container-icon-feature"><i class="fa fa-check"></i></div>
+                                                </div>
+                                                <div class="div-itens-features">
+                                                    <div class="div-container-texto-feature">Validador de apostas</div>
+                                                    <div class="div-container-icon-feature"><i class="fa fa-check"></i></div>
+                                                </div>
+                                                <div class="div-itens-features">
+                                                    <div class="div-container-texto-feature">Acesso ilimitado</div>
+                                                    <div class="div-container-icon-feature"><i class="fa fa-check"></i></div>
+                                                </div>
+                                                <div class="div-itens-features">
+                                                    <div class="div-container-texto-feature">Prioridade na fila</div>
+                                                    <div class="div-container-icon-feature"><i class="fa fa-check"></i></div>
+                                                </div>
+                                                <div class="div-itens-features">
+                                                    <div class="div-container-texto-feature">Atendimento prioritário</div>
+                                                    <div class="div-container-icon-feature"><i class="fa fa-check"></i></div>
+                                                </div>
+                                                <div class="div-itens-features">
+                                                    <div class="div-container-texto-feature">Suporte técnico</div>
+                                                    <div class="div-container-icon-feature"><i class="fa fa-check"></i></div>
+                                                </div>
+                                            </div>
+                                            <div class="div-container-pricing">
+                                                <span class="span-text-moeda">R$</span><span class="pricing-price">100,00</span><span class="span-recurrence">/mês</span>
+                                            </div>
+                                            <a href="#/" class="pricing-button">Assinar</a>
+                                        </div>
+                                
+                                    </div>
+                                </div>
+                            </div>
+                        </section>
+                    </div>
+                </div>
+            </div>
+        </main>
+        <!-- page-content" -->
+    </div>
+    <!-- page-wrapper -->
+
+    
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js" integrity="sha384-wHAiFfRlMFy6i5SRaxvfOCifBUQy1xHdJ/yoi7FRNXMRBu5WHdZYu1hA6ZOblgut" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js" integrity="sha384-B0UglyR+jN6CkvvICOB2joaf5I4l3gm9GU6Hc1og6Ls7i6U/mkkaduKaBhlAXv9k" crossorigin="anonymous"></script>
+    <script src="//malihu.github.io/custom-scrollbar/jquery.mCustomScrollbar.concat.min.js"></script>
+
+    <script src="js/main.js"></script>
+</body>
+
+</html>
